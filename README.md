@@ -2,7 +2,8 @@
 A simple parser as a final task of Automata Theory and Languages at Telkom University.
 
 ## Description
-Teori Bahsa dan Automata
+Teori Bahasa dan Automata
+
 Parser Sederhana untuk Memerika Kevalidan Struktur Kalimat Berbahasa Indonesia
 
 Pada tugas ini struktur kalimat berita aktif dengan struktur:
