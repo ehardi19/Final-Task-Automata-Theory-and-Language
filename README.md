@@ -12,12 +12,6 @@ Pada tugas ini struktur kalimat berita aktif dengan struktur:
 * S-P-O
 * S-P
 
-Daftar kata yang diterima untuk setiap tipe kata
-* S = `saya`, `adi`, `mereka`, `dia`, `kakak`
-* P = `baca`, `lihat`, `main`, `nulis`, `pakai`
-* O = `bubur`, `tugas`, `apel`, `rubik`, `komik`
-* K = `sekarang`, `kemarin`, `nanti`, `lusa`, `bersama`
-
 ## Run Program
 - Clone this repository. `git clone https://github.com/ehardi19/indonesian-sentence-parser.git`
 - Install library used in this repository. `sudo apt-get install libboost-all-dev`
@@ -25,6 +19,11 @@ Daftar kata yang diterima untuk setiap tipe kata
 - Run the program `./main` and input sentence to check.
 
 ## Notes
+Daftar kata yang diterima untuk setiap tipe kata:
+* S = `saya`, `adi`, `mereka`, `dia`, `kakak`
+* P = `baca`, `lihat`, `main`, `nulis`, `pakai`
+* O = `bubur`, `tugas`, `apel`, `rubik`, `komik`
+* K = `sekarang`, `kemarin`, `nanti`, `lusa`, `bersama`
 
 ## License
 Licensed under The MIT License.
