@@ -36,7 +36,7 @@ bool isS(string word) {
         for (int i = 1; i < word.size(); i++)
             if (word[i] != state[i]) return 0;
 
-        // if case reached accepting state return true
+        // case reached accept state
         return 1;
     } else {
         return 0;
