@@ -1,7 +1,7 @@
 # indonesian-sentence-parser
-A simple parser as a final task of Automata Theory and Languages at Telkom University.
+Sebuah parser sederhana sebagai tugas besar mata kuliah Teori Bahasa dan Automata di Telkom University
 
-## Description
+## Deskripsi
 Teori Bahasa dan Automata
 
 Parser Sederhana untuk Memerika Kevalidan Struktur Kalimat Berbahasa Indonesia
@@ -12,18 +12,34 @@ Pada tugas ini struktur kalimat berita aktif dengan struktur:
 * S-P-O
 * S-P
 
-## Run Program
-- Clone this repository. `git clone https://github.com/ehardi19/indonesian-sentence-parser.git`
-- Install library used in this repository. `sudo apt-get install libboost-all-dev`
-- Compile with C++11. `g++ -std=c++11 main.cpp -o main`.
-- Run the program `./main` and input sentence to check.
+**Finite Automata** untuk mengecek tipe kata
+![](https://raw.githubusercontent.com/ehardi19/indonesian-sentence-parser/master/images/FA.png)
 
-## Notes
+**Finite Automata** untuk mengecek apakah kata ada di kamus
+![](https://raw.githubusercontent.com/ehardi19/indonesian-sentence-parser/master/images/FA%20sample.png)
+
+**Context Free Grammar** untuk mengecek kevalidan struktur kalimat:
+* qo → sq1
+* q1 → pq2
+* q2 → oq3 | kq4 | λ
+* q3 → kq4 | λ
+* q4 → λ
+
+**Pushdown Automata** untuk mengecek kevalidan struktur kalimat
+![](https://raw.githubusercontent.com/ehardi19/indonesian-sentence-parser/master/images/PDA.png)
+
+## Jalankan Program
+- Clone repository ini. `git clone https://github.com/ehardi19/indonesian-sentence-parser.git`
+- Install library yang digunakan pada repository ini. `sudo apt-get install libboost-all-dev`
+- Compile dengan C++11. `g++ -std=c++11 main.cpp -o main`.
+- Jalankan program `./main` dan input kalimat untuk dicek.
+
+## Catatan
 Daftar kata yang diterima untuk setiap tipe kata:
 * S = `saya`, `adi`, `mereka`, `dia`, `kakak`
 * P = `baca`, `lihat`, `main`, `nulis`, `pakai`
 * O = `bubur`, `tugas`, `apel`, `rubik`, `komik`
 * K = `sekarang`, `kemarin`, `nanti`, `lusa`, `bersama`
 
-## License
+## Lisensi
 Licensed under The MIT License.
