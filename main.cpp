@@ -2,13 +2,11 @@
     @author : Eko Hardiyanto (github.com/ehardi19)
 */
 
-#include <iostream>
 #include <algorithm>
+#include <iostream>
+#include <sstream>
 #include <string>
 #include <vector>
-#include <boost/algorithm/string.hpp>
-#include <boost/algorithm/string/classification.hpp> 
-#include <boost/algorithm/string/split.hpp>
 
 #define pop(PDA, i) PDA.erase(remove(PDA.begin(), PDA.end(), i), PDA.end())
 #define push(PDA, i) PDA.push_back(i)
@@ -136,6 +134,9 @@ bool isPattern(vector<string> v) {
                 pop(PDA, 'O');
             push(PDA, 'K');
             cout << top(PDA);
+        } else {
+            push(PDA, ' ');
+            cout << '_';
         }
     }
     cout << '\n';
@@ -153,11 +154,12 @@ int main() {
     getline(cin, sentence);
     
     // lower case the string
-    boost::algorithm::to_lower(sentence);
-
+    transform(sentence.begin(), sentence.end(), sentence.begin(), ::tolower);
+    
     // separate string by space into vector
     vector<string> v;
-    boost::split(v, sentence, boost::is_any_of(" "));
+    istringstream iss(sentence);
+    for (string sentence; iss >> sentence; ) v.push_back(sentence);
 
     // check the pattern if valid
     cout << (isPattern(v) ? "ACCEPTED" : "REJECTED") << '\n';
