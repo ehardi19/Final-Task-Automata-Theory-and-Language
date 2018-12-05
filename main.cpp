@@ -33,7 +33,7 @@ bool isS(string word) {
 
     // check
     if (!state.empty()) {
-        for (int i = 1; i < word.size(); i++)
+        for (int i = 1; i < state.size(); i++)
             if (word[i] != state[i]) return 0;
 
         // case reached accept state
@@ -52,7 +52,7 @@ bool isP(string word) {
 
     // check
     if (!state.empty()) {
-        for (int i = 1; i < word.size(); i++)
+        for (int i = 1; i < state.size(); i++)
             if (word[i] != state[i]) return 0;
 
         // case reached accept state
@@ -71,7 +71,7 @@ bool isO(string word) {
 
     // check
     if (!state.empty()) {
-        for (int i = 1; i < word.size(); i++)
+        for (int i = 1; i < state.size(); i++)
             if (word[i] != state[i]) return 0;
 
         // case reached accept state
@@ -90,7 +90,7 @@ bool isK(string word) {
 
     // check
     if (!state.empty()) {
-        for (int i = 1; i < word.size(); i++)
+        for (int i = 1; i < state.size(); i++)
             if (word[i] != state[i]) return 0;
 
         // case reached accept state
