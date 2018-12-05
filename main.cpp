@@ -35,7 +35,9 @@ bool isS(string word) {
     if (!state.empty()) {
         for (int i = 1; i < state.size(); i++)
             if (word[i] != state[i]) return 0;
-
+        
+        // case goes beyond accept state
+        if (word[state.size()]) return 0;
         // case reached accept state
         return 1;
     } else {
@@ -55,6 +57,8 @@ bool isP(string word) {
         for (int i = 1; i < state.size(); i++)
             if (word[i] != state[i]) return 0;
 
+        // case goes beyond accept state
+        if (word[state.size()]) return 0;
         // case reached accept state
         return 1;
     } else {
@@ -74,6 +78,8 @@ bool isO(string word) {
         for (int i = 1; i < state.size(); i++)
             if (word[i] != state[i]) return 0;
 
+        // case goes beyond accept state
+        if (word[state.size()]) return 0;
         // case reached accept state
         return 1;
     } else {
@@ -92,7 +98,9 @@ bool isK(string word) {
     if (!state.empty()) {
         for (int i = 1; i < state.size(); i++)
             if (word[i] != state[i]) return 0;
-
+        
+        // case goes beyond accept state
+        if (word[state.size()]) return 0;
         // case reached accept state
         return 1;
     } else {
@@ -133,7 +141,7 @@ bool isPattern(vector<string> v) {
     cout << '\n';
 
     // pop the last one
-    if (top(PDA) != '$' && top(PDA) != 'S') PDA.pop_back();
+    if (top(PDA) == 'P' || top(PDA) == 'O' || top(PDA) == 'k') PDA.pop_back();
 
     // check whether the PDA is empty
     return top(PDA) == '#' ? 1 : 0;
