@@ -30,7 +30,6 @@ Pada tugas ini struktur kalimat berita aktif dengan struktur:
 
 ## Jalankan Program
 - Clone repository ini. `git clone https://github.com/ehardi19/indonesian-sentence-parser.git`
-- Install library yang digunakan pada repository ini. `sudo apt-get install libboost-all-dev`
 - Compile dengan C++11. `g++ -std=c++11 main.cpp -o main`.
 - Jalankan program `./main` dan input kalimat untuk dicek.
 
