@@ -15,9 +15,6 @@ Pada tugas ini struktur kalimat berita aktif dengan struktur:
 **Finite Automata** untuk mengecek tipe kata
 ![](https://raw.githubusercontent.com/ehardi19/indonesian-sentence-parser/master/images/FA.png)
 
-**Finite Automata** untuk mengecek apakah kata ada di kamus
-![](https://raw.githubusercontent.com/ehardi19/indonesian-sentence-parser/master/images/FA%20sample.png)
-
 **Context Free Grammar** untuk mengecek kevalidan struktur kalimat:
 * qo → sq1
 * q1 → pq2
