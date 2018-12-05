@@ -35,10 +35,10 @@ Pada tugas ini struktur kalimat berita aktif dengan struktur:
 
 ## Catatan
 Daftar kata yang diterima untuk setiap tipe kata:
-* S = `saya`, `adi`, `mereka`, `dia`, `kakak`
+* S = `adi`, `dia`, `kakak`, `mereka`, `saya`
 * P = `baca`, `lihat`, `main`, `nulis`, `pakai`
-* O = `bubur`, `tugas`, `apel`, `rubik`, `komik`
-* K = `sekarang`, `kemarin`, `nanti`, `lusa`, `bersama`
+* O = `apel`, `bubur`, `komik`, `rubik`, `tugas`
+* K = `bersama`, `kemarin`, `lusa`, `nanti`, `sekarang`
 
 ## Lisensi
 Licensed under The MIT License.
