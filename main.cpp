@@ -107,40 +107,39 @@ bool isPattern(vector<string> v) {
     push(PDA, '$');
 
     // check
-    cout << ">> ";
     for (string word : v) {
 
         if (isS(word)) {
             pop(PDA, '$');
             push(PDA, 'S');
+            cout << top(PDA);
         } else if (isP(word)) {
             pop(PDA, 'S');
             push(PDA, 'P');
+            cout << top(PDA);
         } else if (isO(word)) {
             pop(PDA, 'P');
             push(PDA, 'O');
+            cout << top(PDA);
         } else if (isK(word)) {
             if (top(PDA) == 'P')
                 pop(PDA, 'P');
             else if (top(PDA) == 'O')
                 pop(PDA, 'O');
             push(PDA, 'K');
+            cout << top(PDA);
         }
-
-        cout << top(PDA);
     }
     cout << '\n';
 
     // pop the last one
-    PDA.pop_back();
+    if (top(PDA) != '$' && top(PDA) != 'S') PDA.pop_back();
 
     // check whether the PDA is empty
     return top(PDA) == '#' ? 1 : 0;
 }
 
-int main() {
-    cout << ">> ";
-    
+int main() {    
     // getting input from user
     string sentence;
     getline(cin, sentence);
@@ -153,7 +152,7 @@ int main() {
     boost::split(v, sentence, boost::is_any_of(" "));
 
     // check the pattern if valid
-    cout << (isPattern(v) ? ">> ACCEPTED" : ">> REJECTED") << '\n';
+    cout << (isPattern(v) ? "ACCEPTED" : "REJECTED") << '\n';
 
     return 0;
 }
