@@ -142,7 +142,7 @@ bool isPattern(vector<string> v) {
     cout << '\n';
 
     // pop the last one
-    if (top(PDA) == 'P' || top(PDA) == 'O' || top(PDA) == 'k') PDA.pop_back();
+    if (top(PDA) == 'P' || top(PDA) == 'O' || top(PDA) == 'K') PDA.pop_back();
 
     // check whether the PDA is empty
     return top(PDA) == '#' ? 1 : 0;

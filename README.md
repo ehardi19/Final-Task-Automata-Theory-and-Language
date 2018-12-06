@@ -16,11 +16,12 @@ Pada tugas ini struktur kalimat berita aktif dengan struktur:
 ![](https://raw.githubusercontent.com/ehardi19/indonesian-sentence-parser/master/images/FA.png)
 
 **Context Free Grammar** untuk mengecek kevalidan struktur kalimat:
-* qo → sq1
-* q1 → pq2
-* q2 → oq3 | kq4 | λ
-* q3 → kq4 | λ
-* q4 → λ
+* Q → sS
+* S → pP
+* P → oO | kK | λ
+* O → kK | λ
+* K → λ
+
 
 **Pushdown Automata** untuk mengecek kevalidan struktur kalimat
 ![](https://raw.githubusercontent.com/ehardi19/indonesian-sentence-parser/master/images/PDA.png)
