@@ -13,7 +13,7 @@ Pada tugas ini struktur kalimat berita aktif dengan struktur:
 * S-P
 
 **Finite Automata** untuk mengecek tipe kata
-![](https://raw.githubusercontent.com/ehardi19/indonesian-sentence-parser/master/images/FA.png)
+![](https://github.com/ehardi19/indonesian-sentence-parser/blob/master/images/FA.png)
 
 **Context Free Grammar** untuk mengecek kevalidan struktur kalimat:
 * Q → sS
@@ -24,7 +24,7 @@ Pada tugas ini struktur kalimat berita aktif dengan struktur:
 
 
 **Pushdown Automata** untuk mengecek kevalidan struktur kalimat
-![](https://raw.githubusercontent.com/ehardi19/indonesian-sentence-parser/master/images/PDA.png)
+![](https://github.com/ehardi19/indonesian-sentence-parser/blob/master/images/PDA.png)
 
 ## Jalankan Program
 - Clone repository ini. `git clone https://github.com/ehardi19/indonesian-sentence-parser.git`
